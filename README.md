@@ -10,14 +10,13 @@ This can be built with the Dockerfile in the repository or through `go get`.
 
 Used in these two blog posts:
 
-* [One-shot containers on Docker Swarm](http://blog.alexellis.io/containers-on-swarm/)
-* [Builder pattern vs. Multi-stage builds in Docker](http://blog.alexellis.io/mutli-stage-docker-builds/)
+* [xxxxxxx](http://blog.alexellis.io/mutli-stage-docker-builds/)
 
 Example:
 
 ```
-$ url=http://blog.alexellis.io/ go run app.go
-{"internal":40,"external":2}
+$ url=https://www.cnblogs.com/ go run app.go
+{"internal":144,"external":41}
 
-$ url=http://blog.alexellis.io/golang-json-api-client/ go run app.go
-{"internal":17,"external":15}
+$ url=http://www.cnblogs.com/sparkdev/ go run app.go
+{"internal":36,"external":13}

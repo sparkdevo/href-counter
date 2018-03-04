@@ -24,7 +24,7 @@ func isInternal(parsedLink *url.URL, siteUrl *url.URL, link string) bool {
 func main() {
 	urlIn := os.Getenv("url")
 	if len(urlIn) == 0 {
-		urlIn = "https://www.alexellis.io/"
+		urlIn = "https://www.cnblogs.com/"
 		// log.Fatalln("Need a valid url as an env-var.")
 	}
 

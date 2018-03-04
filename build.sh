@@ -1,12 +1,12 @@
 #!/bin/sh
-echo Building alexellis2/href-counter:build
+echo Building sparkdevo/href-counter:build
 
-docker build -t alexellis2/href-counter:build . -f Dockerfile.build
+docker build --no-cache -t sparkdevo/href-counter:build . -f Dockerfile.build
 
-docker create --name extract alexellis2/href-counter:build 
-docker cp extract:/go/src/github.com/alexellis/href-counter/app ./app
+docker create --name extract sparkdevo/href-counter:build
+docker cp extract:/go/src/github.com/sparkdevo/href-counter/app ./app
 docker rm -f extract
 
-echo Building alexellis2/href-counter:latest
+echo Building sparkdevo/href-counter:latest
 
-docker build --no-cache -t alexellis2/href-counter:latest .
+docker build --no-cache -t sparkdevo/href-counter:latest .
