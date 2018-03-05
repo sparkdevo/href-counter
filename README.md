@@ -10,7 +10,7 @@ This can be built with the Dockerfile in the repository or through `go get`.
 
 Used in these two blog posts:
 
-* [xxxxxxx](http://blog.alexellis.io/mutli-stage-docker-builds/)
+* [Dockerfile 中的 multi-stage](http://www.cnblogs.com/sparkdev/p/8508435.html/)
 
 Example:
 
